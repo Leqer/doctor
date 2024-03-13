@@ -1,0 +1,89 @@
+:root {
+    --color1: #485563;
+    --color2: #29323c;
+    --color3: #555f6b;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+  min-width: 1920px;
+  min-height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top, var(--color1), var(--color2));
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color:aliceblue;
+  font-size: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  }
+
+  .nav-conteiner {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color3);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 15px 33rem;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .nav-conteiner a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: color 0.4s;
+  }
+  
+  a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .main{
+    width: 1600px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    padding: 32px 92px;
+    border-radius: 20px;
+    position: absolute;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: auto;
+    transform: translate(0%, 150px);
+    z-index: 1;
+  }
+
+  .product-img {
+    border: white;
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+  
+  .img-product {
+    z-index: 2;
+    position: absolute;
+    transform: translate(-700px, -210px);
+    
+  }
