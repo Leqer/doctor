@@ -1,0 +1,217 @@
+:root {
+  --color1: #485563;
+  --color2: #29323c;
+  --color3: #555f6b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+width: 1920px;
+height: 1080px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(to right top, var(--color1), var(--color2));
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+color:aliceblue;
+font-size: 25px;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow-x: hidden;
+position: absolute;
+}
+
+.bg_img{
+opacity: 0.25;
+transform: translate(280px, -500px);
+position: absolute;
+}
+
+.bg_img--zdjecie2 {
+opacity: 0.25;
+transform: translate(1100px, 600px) rotate(-25deg);
+position: absolute;
+}
+
+
+.nav-conteiner {
+  position: fixed;
+  top: 0;
+  width: 1600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--color3);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 15px 90px;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.nav-conteiner a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: color 0.4s;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.main-container{
+  max-width: 1200px;
+  max-height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.75);
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  padding: 32px 92px;
+  border-radius: 20px;
+  position: relative;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(8px);
+  overflow: auto;
+  transform: translate(0%, -200px);
+}
+
+h1 {
+padding: 24px 0 12px;
+font-size: 48px;
+font-family: "Bebas Neue", sans-serif;
+text-align: center;
+}
+
+p {
+padding-bottom: 12px;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+}
+
+a {
+text-decoration: none;
+position: relative;
+}
+
+.text-new{
+  display: flex;
+  position:absolute;
+  transform: translate(0%, 100px);
+}
+
+.product-container {
+  max-width: 1600px;
+  max-height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position:absolute;
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    padding: 32px 222px;
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: auto;
+    transform: translate(0%, 650px);
+}
+
+.product-item {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.produkt-img {
+  max-width: 280px;
+}
+
+  .buy-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+      background: linear-gradient(to bottom, var(--color1), var(--color3));
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    
+  }
+  
+  .buy-button:hover {
+    background: linear-gradient(to bottom, var(--color1), var(--color2));
+    transition: color 0.4s;
+  }
+  
+  .buy-button:active {
+    background: linear-gradient(to bottom, var(--color1), var(--color2));
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .text-info{
+    display: flex;
+    position:absolute;
+    transform: translate(0%, 1250px);
+  }
+
+.onas{
+  width: 700px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: space-around;
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    padding: 50px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: auto;
+    transform: translate(500px, 1600px);
+    float: right;
+    width: 35%;
+margin-left: 60px;
+
+}
+
+.zdjecia{
+width: 700px;
+height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: space-around;
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    padding: 50px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: auto;
+    transform: translate(-500px, 1600px);
+    float: right;
+    width: 35%;
+margin-right: 60px;
+}
+
+.zdjecia-img{
+  width: 500px;
+  height: 500px;
+}
