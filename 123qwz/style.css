@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -170,25 +171,54 @@ position: relative;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(8px);
     overflow: auto;
-    transform: translate(72%, 1300px);
+    transform: translate(72%, 1535px);
     float: right;
     width: 35%;
+    height: 45%;
 margin-right: 60px;
 
 }
-/* .zdjecia{
+.zdjecia{
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   justify-content: space-around;
   background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-  padding: 50px 50px;
-  border-radius: 20px;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(8px);
-  overflow: auto;
-  transform: translate(50%, 1300px); 
-  float: left;
-  width: 50%;
-  margin-left: 50px;
-} */
+    padding: 30px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: hidden;
+    transform: translate(-65%, 1535px);
+    float: left;
+    width: 35%;
+    height: 45%;
+margin-right: 60px;
+}
+
+.back-img-button {
+  flex-wrap: wrap;
+  font-size: 30px;
+  padding: 10px 25px;
+  background: linear-gradient(to bottom, var(--color1), var(--color3));
+  color: white;
+  border: none;
+  border-radius: 100px;
+  transform: translate(5%, 50%);
+  cursor: pointer
+}
+.next-img-button {
+  font-size: 30px;
+  padding: 10px 25px;
+  background: linear-gradient(to bottom, var(--color1), var(--color3));
+  color: white;
+  border: none;
+  border-radius: 100px;
+  transform: translate(-5%, 50%);
+  cursor: pointer;
+}
+
+#main-image{
+  transform: translate(-5%, 50%);
+  transition: transform 0.5s ease;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -86,7 +87,13 @@
         </header>
 
     </div>
-    <div class="">
+    <div class="zdjecia">
+        <div class="image-container" >
+            <button class="back-img-button" onclick="changeImage(-1) ">&#129144;</button>
+            <img src="img/image1.png" id="main-image">
+            <button class="next-img-button" onclick="changeImage(1)">&#129146;</button>
+          </div>
     </div>
+
 </body>
 </html>

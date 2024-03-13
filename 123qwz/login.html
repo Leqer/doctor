@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularz Logowania i Rejestracji</title>
+<script>
+    // Prosta baza danych użytkowników
+    const users = [
+        { username: "janek123", password: "haslo123" },
+        { username: "1", password: "1" }
+    ];
+
+    // Funkcja do sprawdzania danych logowania
+    function sprawdzDane() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Sprawdzenie, czy użytkownik istnieje w bazie
+        const user = users.find(user => user.username === username);
+
+        if (user && user.password === password) {
+            window.location.href = "main.html";
+            // Tutaj możesz przekierować użytkownika do innej strony
+        } else {
+            alert("Nieprawidłowy login lub hasło.");
+        }
+    }
+
+    // Funkcja do rejestracji nowego użytkownika
+    function zarejestruj() {
+        const username = document.getElementById('new-username').value;
+        const password = document.getElementById('new-password').value;
+
+        // Sprawdzenie, czy użytkownik już istnieje w bazie
+        const existingUser = users.find(user => user.username === username);
+
+        if (existingUser) {
+            alert("Użytkownik o takim loginie już istnieje.");
+        } else {
+            // Dodanie nowego użytkownika do bazy
+            users.push({ username, password });
+            alert("Rejestracja pomyślna! Możesz teraz się zalogować.");
+        }
+    }
+</script>
+</head>
+<body>
+    <h2>Logowanie</h2>
+    <form>
+        <label for="username">Login:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Hasło:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="button" onclick="sprawdzDane()">Zaloguj</button>
+    </form>
+
+    <h2>Rejestracja</h2>
+    <form>
+        <label for="new-username">Nowy Login:</label><br>
+        <input type="text" id="new-username" name="new-username"><br>
+        <label for="new-password">Nowe Hasło:</label><br>
+        <input type="password" id="new-password" name="new-password"><br><br>
+        <button type="button" onclick="zarejestruj()">Zarejestruj</button>
+    </form>
+</body>
+</html>
