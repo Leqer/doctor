@@ -2,6 +2,11 @@
   --color1: #485563;
   --color2: #29323c;
   --color3: #555f6b;
+  --header-height: 3.5rem;
+    --first-color: hsl(31, 100%, 70%);
+    --button-color: hsl(0, 0%, 17%);
+    /* --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem; */
 }
 
 * {
@@ -27,6 +32,10 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 overflow-x: hidden;
+
+
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
 }
 
 .bg_img{
@@ -129,7 +138,7 @@ position: relative;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(8px);
     overflow: auto;
-    transform: translate(0%, 600px);
+    transform: translate(0%, 650px);
 }
 
 .product-item {
@@ -167,41 +176,49 @@ position: relative;
     transform: translateY(4px);
   }
 
-.onas{
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  justify-content: space-around;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-    padding: 50px 50px;
-    border-radius: 20px;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(8px);
-    overflow: auto;
-    transform: translate(72%, 1535px);
-    float: right;
-    width: 35%;
-    height: 45%;
-margin-right: 60px;
+  .text-info{
+    display: flex;
+    position:absolute;
+    transform: translate(0%, 1250px);
+  }
 
-}
-.zdjecia{
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  justify-content: space-around;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-    padding: 30px 30px;
-    border-radius: 20px;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(8px);
-    overflow: hidden;
-    transform: translate(-65%, 1535px);
-    float: left;
-    width: 35%;
-    height: 45%;
-margin-right: 60px;
-}
+  .onas{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-around;
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+      padding: 50px 50px;
+      border-radius: 20px;
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(8px);
+      overflow: auto;
+      transform: translate(500px, 1700px);
+      float: right;
+      width: 35%;
+  margin-left: 60px;
+  
+  }
+  .zdjecia{
+    width: 700px;
+    height: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      justify-content: space-around;
+      background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+        padding: 50px 50px;
+        border-radius: 20px;
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(8px);
+        overflow: auto;
+        transform: translate(-500px, 1700px);
+        float: right;
+        width: 35%;
+    margin-right: 60px;
+    }
 
 .back-img-button {
   flex-wrap: wrap;
@@ -230,7 +247,7 @@ margin-right: 60px;
   transition: transform 0.5s ease;
 }
 
-.newseller{
+/* .newseller{
   width: 1200px;
   height: 350px;
   display: flex;
@@ -245,23 +262,9 @@ margin-right: 60px;
   -webkit-backdrop-filter: blur(8px);
   overflow: auto;
   transform: translate(0%, 2235px);
-}
-/* .newseller1{
-  width: 1000px;
-  height: 175px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.75);
-  background: var(--color3);
-  padding: 32px 92px;
-  border-radius: 20px;
-  position: absolute;
-  overflow: auto;
-  transform: translate(0%, 85px);
 } */
 
-.formnew {
+/* .formnew {
   width: 1000px;
   height: 175px;
   display: flex;
@@ -294,7 +297,44 @@ margin-right: 60px;
 
 .formnew input[type="submit"]:hover {
   background-color: #45a049;
+} */
+
+.newsletter__bg {
+  background-color: var(--first-color);
+  padding: 4.5rem;
+  text-align: initial;
+  row-gap: 2.5rem;
+display: flex;
+position: absolute;
+  width: 1024px;
+  transform: translate(-925px, 2200px);
+  column-gap: 2rem;
+  
 }
 
+.newsletter__title {
+  font-size: var(--h1-font-size);
+  color: hsl(0, 0%, 15%);
+  margin-bottom: var(--mb-1-5);
+  text-align: initial;
+}
+
+.newsletter__description {
+  color: hsl(0, 0%, 35%);
+}
+
+.newsletter__subscribe {
+  display: flex;
+  flex-direction: row;
+  row-gap: .75rem;
+}
+
+.newsletter__input {
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 94%);
+  padding: 1.25rem 1rem;
+  color: hsl(0, 0%, 15%);
+}
 
 
