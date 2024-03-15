@@ -15,3 +15,13 @@ function changeImage(step) {
   }, 200); // Adjust the duration for a smoother transition
 }
 
+let prevClickedBtn = null;
+
+function handleButtonClick(btn) {
+  if (prevClickedBtn) {
+    prevClickedBtn.classList.remove('clicked');
+  }
+  btn.classList.add('clicked');
+  prevClickedBtn = btn;
+}
+
