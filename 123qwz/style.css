@@ -57,6 +57,11 @@ position: absolute;
   z-index: 2;
 }
 
+.logo-nav{
+  color:black;
+  margin-left: 30px;
+}
+
 .nav-conteiner a {
   text-decoration: none;
   color: black;
@@ -245,7 +250,7 @@ position: relative;
   text-align: center;
   display: flex;
   position: absolute;
-  transform: translate(0px, 2300px);
+  transform: translate(0px, 2450px);
 
 
 
@@ -262,6 +267,12 @@ position: relative;
     float: right;
     width: 35%;
 margin-left: 60px;
+}
+
+.text-newsletter{
+  display: flex;
+  position:absolute;
+  transform: translate(0%, 2200px);
 }
 
 .newsletter__description {
@@ -297,4 +308,28 @@ margin-left: 60px;
 
 .button:hover {
   background: linear-gradient(to bottom, var(--color1), var(--color2));
+}
+
+@media only screen and (max-width: 1800px) {
+  body {
+    font-size: 20px;
+  }
+
+  .nav-conteiner {
+    padding: 15px 1rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    max-width: 100%;
+    padding: 16px;
+    transform: translate(0%, 0);
+  }
+
+  .product-container {
+    padding: 16px;
+    transform: translate(0%, 0);
+  }
 }
