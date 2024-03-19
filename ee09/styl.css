@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(#97b498, #c8e6c9);
+    
+}
+
+header {
+
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.left {
+    /* background-color: #c8e6c9; */
+    width: 960px;
+    height: 1080px;
+    color: #ffffff;
+    width: 40%;
+    height: 600px;
+    float:left;
+}
+
+.right {
+    /* color: #005005; */
+    width: 1360px;
+    height: 1080px;
+    overflow-y: scroll;
+    background-color: white;
+    float:right;
+}
+
+footer {
+    /* background: linear-gradient(#c8e6c9, #97b498); */
+    color: white;
+    padding: 12px;
+}
+
+video {
+    width: 500px;
+    height: 500px;
+}
+
+form {
+    margin: 10px 50px;
+}
+
+button {
+    background-color: #97b498;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: #97b498;
+}
