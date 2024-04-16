@@ -1,0 +1,44 @@
+body{
+ background-color: #e1e2e1;
+ font-family:Georgia;
+ text-align: center;
+
+}
+
+/* *{
+    margin:20px;
+} */
+
+header{
+    height: 20px;
+    width: 100%;
+    font-size: 50%;
+    background-color: #005b4f;
+    color:white;
+}
+
+img{
+    width: 20%;
+    border-radius: 100%;
+    float:left
+}
+
+.conteiner{
+    background-color: #00897b;
+margin: 20px;
+
+}
+
+.lista{
+    text-align: left;
+}
+
+.conteiner1{
+    background-color: #00897b;
+margin: 20px;
+
+}
+
+.monia{
+ text-align:left ;
+}
